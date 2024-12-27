@@ -8,8 +8,13 @@ import './css/style.css';
 
 class App {
   constructor() {
+    // Initialize the calorie tracker
     this._tracker = new CalorieTracker();
+    
+    // Load event listeners for various UI elements
     this._loadEventListeners();
+
+    // Load saved items into the tracker
     this._tracker.loadItems();
   }
 
